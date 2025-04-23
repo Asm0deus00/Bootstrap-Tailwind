@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>New Blood Clique</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+  <style>
+    @keyframes wave {
+      0% { transform: scaleY(1) translateY(0); filter: hue-rotate(0deg); }
+      25% { transform: scaleY(1.01) translateY(-2px); filter: hue-rotate(8deg); }
+      50% { transform: scaleY(1) translateY(2px); filter: hue-rotate(-8deg); }
+      75% { transform: scaleY(1.007) translateY(-1px); filter: hue-rotate(5deg); }
+      100% { transform: scaleY(1) translateY(0); filter: hue-rotate(0deg); }
+    }
+    .wave-img {
+      animation: wave 4.5s infinite ease-in-out;
+      transform-origin: center center;
+      image-rendering: crisp-edges;
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-serif">
+
+  <!-- Navbar -->
+  <nav class="bg-black sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between py-4">
+      <a href="#"><img src="assets bs tw/sticky logo nbc.png" alt="Logo" class="h-16"></a>
+      <div class="flex space-x-16 text-red-600 font-bold text-2xl uppercase">
+        <a href="#about" class="hover:text-pink-400 transition">About Me*</a>
+        <a href="#works" class="hover:text-pink-400 transition">Works*</a>
+        <a href="#shop" class="hover:text-pink-400 transition">Buy My Stuff*</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Carousel -->
+  <section class="relative w-full" data-carousel="slide">
+    <div id="main-carousel" class="relative w-full" data-carousel="slide">
+      <div class="relative h-screen overflow-hidden rounded-none">
+        <div class="duration-700 ease-in-out" data-carousel-item="active">
+          <img src="assets bs tw/banner 1-1.png" class="block w-full h-full object-cover wave-img" alt="Banner 1" />
+        </div>
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="assets bs tw/banner 2.png" class="block w-full h-full object-cover wave-img" alt="Banner 2" />
+        </div>
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="assets bs tw/banner 3.png" class="block w-full h-full object-cover wave-img" alt="Banner 3" />
+        </div>
+      </div>
+      <button type="button" class="absolute top-1/2 left-0 z-30 px-4 transform -translate-y-1/2 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 bg-white/30 group-hover:bg-white/50 rounded-full">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </span>
+      </button>
+      <button type="button" class="absolute top-1/2 right-0 z-30 px-4 transform -translate-y-1/2 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 bg-white/30 group-hover:bg-white/50 rounded-full">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </span>
+      </button>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="flex items-center justify-center h-screen bg-black">
+    <img src="assets bs tw/About me.png" alt="About Me" class="wave-img max-w-full h-auto" />
+  </section>
+
+  <!-- WORKS -->
+  <section id="works" class="max-w-7xl mx-auto py-20 px-4">
+    <div class="grid md:grid-cols-2 gap-12 mb-20 items-center">
+      <div>
+        <h2 class="text-red-600 text-5xl font-black mb-6">Music</h2>
+        <p class="text-2xl leading-relaxed">Produzco beats en Fl studio, llevo aproximadamente 6 años creando pistas, y aunque lejos de considerarme un Beatmaker profesional, mis producciones no se quedan atras. venta de wavs/mp3s* - beats por stems*</p>
+      </div>
+      <div id="music-carousel" class="relative w-full" data-carousel="slide">
+        <div class="relative h-80 overflow-hidden rounded-lg">
+          <div class="duration-700 ease-in-out" data-carousel-item="active">
+            <img src="assets bs tw/meo files.png" class="w-[500px] h-[400px] object-contain mx-auto" alt="Music 1" />
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="assets bs tw/stems.png" class="block w-full h-full object-contain" alt="Music 2" />
+          </div>
+        </div>
+        <button type="button" class="absolute top-1/2 left-0 z-30 px-4 transform -translate-y-1/2 cursor-pointer group focus:outline-none" data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-10 h-10 bg-white/30 group-hover:bg-white/50 rounded-full">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+          </span>
+        </button>
+        <button type="button" class="absolute top-1/2 right-0 z-30 px-4 transform -translate-y-1/2 cursor-pointer group focus:outline-none" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-10 h-10 bg-white/30 group-hover:bg-white/50 rounded-full">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-red-600 text-5xl font-black mb-6">Design + Video</h2>
+        <p class="text-2xl leading-relaxed">Como intento de diseñador grafico/multimedia ofrezco servicios de diseño grafico (cualquier tipo de media/proyecto), ilustración y edición de video.</p>
+      </div>
+      <div id="design-carousel" class="relative w-full" data-carousel="slide">
+        <div class="relative h-80 overflow-hidden rounded-lg">
+          <div class="duration-700 ease-in-out" data-carousel-item="active">
+            <img src="assets bs tw/gd meme.png" class="block w-full h-full object-contain" alt="Design 1" />
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="assets bs tw/illust.png" class="block w-full h-full object-contain" alt="Design 2" />
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="assets bs tw/video edit.png" class="block w-full h-full object-contain" alt="Design 3" />
+          </div>
+        </div>
+        <button type="button" class="absolute top-1/2 left-0 z-30 px-4 transform -translate-y-1/2 cursor-pointer group focus:outline-none" data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-10 h-10 bg-white/30 group-hover:bg-white/50 rounded-full">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+          </span>
+        </button>
+        <button type="button" class="absolute top-1/2 right-0 z-30 px-4 transform -translate-y-1/2 cursor-pointer group focus:outline-none" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-10 h-10 bg-white/30 group-hover:bg-white/50 rounded-full">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+<!-- Buy my stuff* -->
+<section class="container mx-auto py-12 px-4" id="shop">
+  <h2 class="text-2xl font-bold text-center mb-10 text-white">BUY MY DESIGNS / TRACKS</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="bg-black shadow-md p-4 rounded text-white">
+      <img src="assets bs tw\il1.png" alt="Item 1" class="w-full h-auto mb-4">
+      <p><strong>Title: N*3DS.</strong><br><strong>Price: 15 USD $</strong><br><strong>Format: Illustration</strong></p>
+    </div>
+    <div class="bg-black shadow-md p-4 rounded text-white">
+      <img src="assets bs tw\il2.png" alt="Item 2" class="w-full h-auto mb-4">
+      <p><strong>Title: Fallen Ang3l.</strong><br><strong>Price: 15 USD $</strong><br><strong>Format: Illustration</strong></p>
+    </div>
+    <div class="bg-black shadow-md p-4 rounded text-white">
+      <img src="assets bs tw\WAV logoi.webp" alt="Item 3" class="w-full h-auto mb-4">
+      <p><strong>Title: FULL BEAT.</strong><br><strong>Price: 15-25 USD $</strong><br><strong>Format: WAV FILE (+ STEMS)</strong></p>
+    </div>
+    <div class="bg-black shadow-md p-4 rounded text-white">
+      <img src="assets bs tw\il3.png" alt="Item 4" class="w-full h-auto mb-4">
+      <p><strong>Title: C0MING H0ME.</strong><br><strong>Price: 15 USD $</strong><br><strong>Format: ILLUSTRATION</strong></p>
+    </div>
+    <div class="bg-black shadow-md p-4 rounded text-white">
+      <img src="assets bs tw\video edit item.png" alt="Item 5" class="w-full h-auto mb-4">
+      <p><strong>Title: VIDEO EDITOR.</strong><br><strong>Price: 20-35 USD $</strong><br><strong>Format: SERVICE</strong></p>
+    </div>
+    <div class="bg-black shadow-md p-4 rounded text-white">
+      <img src="assets bs tw\cd.gif" alt="Item 6" class="w-full h-auto mb-4">
+      <p><strong>Title: FULL BEAT.</strong><br><strong>Price: 10-15 USD %</strong><br><strong>Format: MP3 FILE</strong></p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-black py-6 text-center text-white text-sm mt-20">
+    <div class="flex flex-wrap justify-center space-x-6">
+      <span>ig: diego_cerra.j</span>
+      <span>NewBloodClique.</span>
+      <span>Fantasma Pantera*</span>
+    </div>
+  </footer>
+
+  <!-- Flowbite JS -->
+  <script src="https://unpkg
