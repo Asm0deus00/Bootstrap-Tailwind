@@ -1,0 +1,152 @@
+body {
+  background-color: #000000;
+  color: #fff;
+  font-family: 'Georgia', serif;
+}
+
+.navbar {
+  background-color: #000000;
+}
+
+.navbar-brand img {
+  height: 70px;
+}
+
+.navbar-nav .nav-link {
+  color: red;
+  font-weight: bold;
+  font-size: 250%;
+  text-transform: uppercase;
+  margin-left: 5rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff6666;
+  text-shadow: 0 0 5px red;
+  transform: scale(1.05);
+}
+
+.carousel-item img {
+  height: 100vh;
+  max-width: 150vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  image-rendering: pixelated;
+}
+
+
+.carousel {
+  position: relative;
+}
+
+.about-banner {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.about-banner img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  image-rendering: pixelated;
+}
+
+.about-section .section-title {
+  color: red;
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+
+.about-section .text-column p {
+  font-size: 2.2rem;
+  line-height: 1.6;
+}
+
+.placeholder-img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border: 1px solid transparent;
+}
+
+.shop-section h2 {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.shop-card {
+  background-color: #000000;
+  color: #fff;
+  border: 1px solid #333;
+  padding: 1rem;
+  text-align: center;
+}
+
+.shop-card img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.shop-card img:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 0 15px red;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  font-size: 0.9rem;
+}
+
+footer .footer-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+footer .footer-item {
+  font-family: 'Georgia', serif;
+}
+
+@keyframes wave {
+  0% {
+    transform: scaleY(1) translateY(0);
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    transform: scaleY(1.01) translateY(-2px);
+    filter: hue-rotate(8deg);
+  }
+  50% {
+    transform: scaleY(1) translateY(2px);
+    filter: hue-rotate(-8deg);
+  }
+  75% {
+    transform: scaleY(1.007) translateY(-1px);
+    filter: hue-rotate(5deg);
+  }
+  100% {
+    transform: scaleY(1) translateY(0);
+    filter: hue-rotate(0deg);
+  }
+}
+
+.wave-img {
+  animation: wave 4.5s infinite ease-in-out;
+  transform-origin: center center;
+  image-rendering: crisp-edges;
+}
